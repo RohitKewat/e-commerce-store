@@ -1,0 +1,17 @@
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    margin-top: 2rem;
+   background-color: rgb(68, 228, 28);
+}
+.cpn-name{
+
+    font-weight: bolder;
+    font-size: larger;
+}
+.cart-icon{
+    height: 2rem;
+
+}
