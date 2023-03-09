@@ -9,7 +9,7 @@ const Item =({item})=>{
         <>
            <section className='item-box'>
              <article className='item-image'>
-                <img src={item?.imageurl} alt="gameimage" />
+                <img src={`http://localhost:1337${item?.image?.data?.attributes?.url}`} alt="gameimage" className='game-image'/>
              </article>
              <article className='item-title'>
                 Title : {item?.title}

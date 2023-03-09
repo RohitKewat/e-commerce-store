@@ -11,7 +11,7 @@ const Main = () => {
     useEffect(() => {
 
         //------------------------ getting data of bestSeller games -----------------------
-        axios.get("http://localhost:1337/api/best-sellers").then( async(bestSeller) => {
+        axios.get("http://localhost:1337/api/best-sellers?populate=*").then( async(bestSeller) => {
            await setbestSellerdata(bestSeller.data.data);
         }).catch((e) => {
             console.log(e);
@@ -19,7 +19,7 @@ const Main = () => {
 
         })
         //------------------------ getting data of action games -----------------------
-        axios.get("http://localhost:1337/api/action-games").then((actionGames) => {
+        axios.get("http://localhost:1337/api/action-games?populate=*").then((actionGames) => {
             setactionGamesData(actionGames.data.data);
         }).catch((e) => {
             console.log(e);
